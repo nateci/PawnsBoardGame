@@ -2,21 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>PawnsBoard Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PawnsBoard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #20232a;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .download {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.75rem 1.5rem;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+
+    .download:hover {
+      background-color: #43a047;
+    }
+
+    pre {
+      background-color: #e0e0e0;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>PawnsBoard</h1>
-  <p>A two-player Java strategy game with AI and GUI support.</p>
 
-  <h3>📥 Download</h3>
-  <p>
-    <a href="PawnsBoard.zip" download>⬇️ Download PawnsBoard for Windows (.zip)</a>
-  </p>
+  <header>
+    <h1>♟️ PawnsBoard</h1>
+    <p>A strategic Java-based two-player board game</p>
+  </header>
 
-  <h3>📖 ReadMe</h3>
-  <pre>
-  This game requires no installation — just unzip and double-click PawnsBoard.exe.
-  You’ll need Java 11 or higher if it's not bundled.
-  </pre>
+  <main>
+    <h2>📥 Download</h2>
+    <a class="download" href="PawnsBoard.zip" download>Download PawnsBoard (.zip)</a>
+
+    <h2>📖 How to Play</h2>
+    <pre>
+1. Download and unzip the game.
+2. Run PawnsBoard.exe (Java 11+ required).
+3. You’ll see a red AI vs. blue human GUI game.
+4. Play strategically to fill the board and win!
+    </pre>
+
+    <h2>ℹ️ About</h2>
+    <p>
+      PawnsBoard is a strategy game built in Java with a Swing GUI.
+      It supports human and AI players using rule-based and minimax strategies.
+      Originally built as part of an object-oriented design course.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Nate Cirino / Nabeel Makda — Built with Java + Launch4j
+  </footer>
+
 </body>
 </html>
