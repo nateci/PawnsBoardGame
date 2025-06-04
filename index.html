@@ -78,77 +78,59 @@
 
   <header>
     <h1>♟️ PawnsBoard</h1>
-    <p>A strategic two-player board game inspired by Queen's Blood from Final Fantasy</p>
+    <p>A strategy board game inspired by Final Fantasy’s Queen’s Blood</p>
   </header>
 
   <main>
     <h2>📥 Download</h2>
     <a class="download" href="PawnsBoard.zip" download>Download PawnsBoard (.zip)</a>
 
-    <h2>📘 Game Instructions & Documentation</h2>
-    <div class="instructions-container">
-      <h3>Overview</h3>
-      <p>Pawns Board is a strategic two-player board game where players compete to control a grid using pawns and cards with unique effects. Each player, Red and Blue, will take turns placing cards on a rectangular board to influence nearby cells, convert opponent's pawns, and secure higher row scores. The game ends when both players pass consecutively, and the winner is determined by the total score respectively to conquered (or won) rows.</p>
+    <h2>🚀 How to Launch the Game</h2>
+    <ol>
+      <li>Download and unzip <strong>PawnsBoard.zip</strong></li>
+      <li>Double-click <strong>PawnsBoard.exe</strong></li>
+      <li>A small launcher window will open</li>
+      <li>Select:
+        <ul>
+          <li>The deck file (or leave default)</li>
+          <li>Red and Blue player strategies (human, AI, etc.)</li>
+        </ul>
+      </li>
+      <li>Click <strong>Start Game</strong> to play!</li>
+    </ol>
 
-      <h4>Key Assumptions</h4>
-      <ul>
-        <li>Strictly two-player</li>
-        <li>Board is 3 rows by 5 columns</li>
-        <li>Each deck has 2 copies per card</li>
-        <li>Cards influence pawns, but pawns cannot be moved</li>
-      </ul>
+    <p><em>No terminal or Java installation required — just unzip and run.</em></p>
 
-      <h4>Quick Start</h4>
-      <p>Run the executable with a deck file and two player types (e.g., `decks/deck.config fillfirst human`). A GUI will launch with each player either controlled by a human or AI strategy.</p>
 
-      <h4>Key Components</h4>
-      <ul>
-        <li><strong>Game.java:</strong> manages loop, passing logic, and winner</li>
-        <li><strong>Board.java:</strong> stores grid and validates moves</li>
-        <li><strong>Player.java:</strong> owns hand, deck, and pawns</li>
-        <li><strong>Card.java:</strong> holds cost, value, and 5x5 influence grid</li>
-        <li><strong>DeckReader.java:</strong> loads cards from config files</li>
-        <li><strong>PawnsBoardViewImpl.java:</strong> GUI implementation with mouse + key handling</li>
-      </ul>
+  <h2>📘 Full Game Instructions</h2>
+  <div class="instructions-container">
+    <p><strong>PawnsBoard</strong> is a two-player strategic board game where players use cards to influence a grid, capture pawns, and score control of rows. Inspired by Queen’s Blood from Final Fantasy XVI, each player builds influence using cards with unique 5x5 patterns.</p>
 
-      <h4>Strategies Implemented</h4>
-      <ul>
-        <li><strong>FillFirstStrategy:</strong> Greedy top-left first move</li>
-        <li><strong>MaximizeRowScoreStrategy:</strong> Try to win rows</li>
-        <li><strong>ControlTheBoardStrategy:</strong> Maximize total pawn control</li>
-        <li><strong>MinimaxStrategy:</strong> Minimize opponent’s options</li>
-        <li><strong>ChainedStrategy:</strong> Try one strategy, fallback to next</li>
-      </ul>
+    <p>Features:</p>
+    <ul>
+      <li>Graphical interface for human vs. human or human vs. AI play</li>
+      <li>Multiple AI strategies: FillFirst, MaximizeRowScore, Minimax, etc.</li>
+      <li>Visualized influence, card selection, and status indicators</li>
+      <li>Two-player turn-based system with scoring</li>
+    </ul>
 
-      <h4>GUI Features</h4>
-      <ul>
-        <li>Two independent windows (Red & Blue)</li>
-        <li>Click to select cards & cells</li>
-        <li>Enter to confirm move, Space to pass</li>
-        <li>Titles update on turn change</li>
-        <li>Game end popup shows final score</li>
-      </ul>
+    <p>To win: control more rows by scoring higher than your opponent in each row.</p>
 
-      <h4>Advanced Features</h4>
-      <ul>
-        <li>Provider View Integration (via adapters)</li>
-        <li>Mock model for strategy unit tests</li>
-        <li>Custom key bindings for Provider GUI</li>
-        <li>Strategy transcripts for reproducibility</li>
-      </ul>
+    <p>Want more technical details? Check the full <code>README.md</code> in the GitHub repo or explore the source files!</p>
+  </div>
 
-      <h4>Running the Game</h4>
-      <pre>
-PawnsBoard.exe decks/UDDeck.config fillfirst human
-      </pre>
-      <p>Make sure the `deck.config` file is in the correct location and formatted properly.</p>
-
-      <p>📝 For full source structure and tests, see the <a href="https://github.com/nateci/pawnsboard" target="_blank">GitHub repo</a>.</p>
+  <h2>🌐 View the Source Code</h2>
+  <p>
+    You can explore, fork, or star the project here:<br/>
+    <a href="https://github.com/your-username/pawnsboard-game" target="_blank">
+      🔗 github.com/your-username/pawnsboard-game
+    </a>
+  </p>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Nate Cirino / Nabeel Makda — Built in Java with Launch4j &hearts;
+    &copy; 2025 Your Name — Built in Java with Swing &hearts;
   </footer>
 
 </body>
